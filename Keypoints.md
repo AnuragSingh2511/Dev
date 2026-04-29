@@ -145,3 +145,5 @@ Task 1
 - Async is best for API calls, DB ops, file handling  
 
 ---
+
+- ## **Javascript is a language but Node.js is runtime(not a lang) that is used to run javascript(Week 2.1 15:31)**
