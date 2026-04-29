@@ -147,3 +147,4 @@ Task 1
 ---
 
 - ## **Javascript is a language but Node.js is runtime(not a lang) that is used to run javascript(Week 2.1 15:31)**
+- ## **WebRTC protocol is a protocol used for video communications (Week 2.1 22:12)**
