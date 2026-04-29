@@ -66,3 +66,82 @@ Code is converted into machine code before execution
 - Can interpreted languages be faster in some cases?
 
 ---
+
+## ⚡ Synchronous vs Asynchronous Functions
+
+
+### 🟡 Synchronous (Sync)
+Executes step-by-step (blocking)
+
+- One task at a time  
+- Next task waits until current finishes  
+- Blocking nature  
+- Simple to debug  
+- Not efficient for I/O operations  
+
+#### 📌 Example:
+```js
+console.log("Start");
+console.log("Task 1");
+console.log("Task 2");
+console.log("End");
+```
+
+#### 🧾 Output:
+```
+Start
+Task 1
+Task 2
+End
+```
+
+---
+
+### 🔵 Asynchronous (Async)
+Non-blocking execution
+
+- Does not wait for task completion  
+- Uses background handling (Web APIs)  
+- Improves performance for I/O tasks  
+- Uses callbacks, Promises, async/await  
+- Execution order may differ  
+
+#### 📌 Example:
+```js
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Task 1");
+}, 2000);
+
+console.log("End");
+```
+
+#### 🧾 Output:
+```
+Start
+End
+Task 1
+```
+
+---
+
+### ⚔️ Key Differences
+
+| Feature      | Sync 🟡        | Async 🔵             |
+|--------------|----------------|----------------------|
+| Execution    | Sequential     | Non-blocking         |
+| Blocking     | Yes            | No                   |
+| Performance  | Slower (I/O)   | Faster (I/O)         |
+| Complexity   | Low            | Medium               |
+
+---
+
+### 🎯 Interview Points
+
+- JavaScript is single-threaded, async handled via Event Loop  
+- Async ≠ parallel execution  
+- setTimeout → Web APIs → Callback Queue → Event Loop  
+- Async is best for API calls, DB ops, file handling  
+
+---
