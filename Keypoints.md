@@ -1,7 +1,7 @@
 # 🧠 Programming Languages Overview
 
 ## 🟡 Interpreted Languages
-> Code is executed line-by-line at runtime (no separate compilation step)
+ Code is executed line-by-line at runtime (no separate compilation step)
 
 ### 📌 Examples:
 - JavaScript
@@ -19,7 +19,7 @@
 ---
 
 ## 🔵 Compiled Languages
-> Code is converted into machine code before execution
+Code is converted into machine code before execution
 
 ### 📌 Examples:
 - C++
@@ -56,7 +56,7 @@
 - JavaScript uses **JIT (Just-In-Time Compilation)** → not purely interpreted
 - Performance-critical apps → prefer compiled languages
 
----
+
 
 ## ❓ Follow-up Questions (Interview Traps)
 
